@@ -22,4 +22,9 @@ export class AppComponent {
 
     return enteredLetter === randomletter ? 'correct' : 'incorrect';
   }
+
+  onButtonClick() {
+    this.randomText = lorem.sentence();
+    console.log(this.randomText);
+  }
 }

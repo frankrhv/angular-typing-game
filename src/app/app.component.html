@@ -13,7 +13,13 @@
       <div class="field">
         <input class="input" (input)="onInput($event.target!)" />
       </div>
-
+      <button
+        class="button is-link is-fullwidth"
+        (click)="onButtonClick()"
+        type="button"
+      >
+        Generate new random phrase
+      </button>
       <div *ngIf="randomText === enteredText" class="box has-text-centered">
         <h1 class="title">Success!</h1>
       </div>
